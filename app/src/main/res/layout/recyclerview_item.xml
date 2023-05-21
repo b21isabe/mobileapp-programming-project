@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/planetName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="24sp"
+        android:paddingStart="2sp"
+        android:paddingEnd="2sp"/>
+
+    <TextView
+        android:id="@+id/planetCircumference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingStart="8sp"
+        android:paddingEnd="8sp"
+        android:text="Circumference" />
+
+    <TextView
+        android:id="@+id/planetYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingStart="8sp"
+        android:paddingEnd="8sp"
+        android:text="Year"/>
+
+</LinearLayout>
