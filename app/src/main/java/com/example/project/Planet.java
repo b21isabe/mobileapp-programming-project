@@ -2,33 +2,20 @@ package com.example.project;
 
 import com.google.gson.annotations.SerializedName;
 
+@SuppressWarnings("WeakerAccess")
 public class Planet {
 
     private String name;
-    @SerializedName("size")
-    private int circumference;
-    @SerializedName("cost")
-    private int year;
+    private int size;
+    private int cost;
 
     @Override
     public String toString() {
         return "Planet{" +
                 "name='" + name + '\'' +
-                ", circumference=" + circumference +
-                ", year=" + year +
+                ", size=" + size +
+                ", cost=" + cost +
                 '}';
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setCircumference(int circumference) {
-        this.circumference = circumference;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
     }
 
 
@@ -36,19 +23,35 @@ public class Planet {
         return name;
     }
 
-    public int getCircumference() {
-        return circumference;
-    }
-
-    public int getYear() {
-        return year;
-    }
-
-    public Planet(String name, int circumference, int year) {
+    public void setName(String name) {
         this.name = name;
-        this.circumference = circumference;
-        this.year = year;
     }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+    public int getCost() {
+        return cost;
+    }
+
+    public void setCost(int cost) {
+        this.cost = cost;
+    }
+
+    public Planet(String name, int size, int cost) {
+        this.name = name;
+        this.size = size;
+        this.cost = cost;
+    }
+
+
+
+
 
 
 
