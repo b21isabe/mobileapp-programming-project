@@ -9,15 +9,6 @@ public class Planet {
     private int size;
     private int cost;
 
-    @Override
-    public String toString() {
-        return "Planet{" +
-                "name='" + name + '\'' +
-                ", size=" + size +
-                ", cost=" + cost +
-                '}';
-    }
-
 
     public String getName() {
         return name;
