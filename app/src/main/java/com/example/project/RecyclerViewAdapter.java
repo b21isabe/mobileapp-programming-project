@@ -30,8 +30,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(@NonNull RecyclerViewAdapter.ViewHolder holder, int position) {
         holder.planetName.setText(planets.get(position).getName());
-        holder.planetCircumference.setText(String.valueOf(planets.get(position).getSize()));
-        holder.planetYear.setText(String.valueOf(planets.get(position).getCost()));
+        holder.planetCircumference.setText("Omkrets runt ekvatorn: "+ planets.get(position).getSize() +"km");
+        holder.planetYear.setText("Ett år: "+ planets.get(position).getCost() +" dagar på jorden");
 
     }
 
